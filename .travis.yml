@@ -6,6 +6,6 @@ services:
     - docker
 
 script:
-    - sh script.sh
+    - sh start.sh
 
 
