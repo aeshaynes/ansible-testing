@@ -3,23 +3,23 @@
   hosts: all
   connection: local
   user: root
-  sudo: true
+  become: sudo 
 
   tasks:
 
     - name: install EPEL
       yum: name=epel-release state=present
 
-    - name: install the lastest version of blah
-      package:
-        name: "{{ item }}"
-      with_items:
-        - "vim"
-        - "tmux"
-        - "htop"
-        - "atop"
-        - "sysstat"
-        - "git"
-        - "subversion"
-        - "python"
-        - "python-pip"
+  #    - name: install the lastest version of blah
+  #      package:
+  #     name: "{{ item }}"
+  #   with_items:
+  #     - "vim"
+  #     - "tmux"
+  #     - "htop"
+  #     - "atop"
+  #     - "sysstat"
+  #     - "git"
+  #     - "subversion"
+  #     - "python"
+  #     - "python-pip"
