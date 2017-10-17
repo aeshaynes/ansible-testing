@@ -9,6 +9,9 @@
 
     - name: install EPEL
       yum: name=epel-release state=present
+    
+  roles:
+    - geerlingguy.docker
 
   #    - name: install the lastest version of blah
   #      package:

@@ -1,3 +1,2 @@
--name: docker
-    src: geerlingguy.docker
-
+- src: yatesr.timezone
+- src: geerlingguy.docker
